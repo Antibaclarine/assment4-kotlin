@@ -14,23 +14,22 @@ multiple()
 //following values: first character, last character, length of the string and
 //whether it begins with a vowel or not. (6pts)
 
-fun random(word:String):Char{
-    var vowel="a,e,i,o,u,A,E,I,O,U"
-   for (i in word){
-       if (word == word){
-           println(word.length)
-       }
-       else if (word<=word){
-           println(word.length-1)
-       }
+fun random(word:String):Char {
+    var vowel = "a,e,i,o,u,A,E,I,O,U"
+    for (i in word) {
+        if (word == word) {
+            println(word.length)
+        } else if (word <= word) {
+            println(word.length - 1)
+        }
 
-       if (i==vowel){
-return vowel
-       }
+//       if (i==vowel){
+//return vowel
+//       }
 
-   }
-//
-//}
+    }
+
+}
 //Create a function that takes in a password as a parameter. For a password to
 //be valid it must meet the following conditions:
 //1. Must be at least 8 characters long
@@ -39,12 +38,12 @@ return vowel
 //4. Must contain a digit
 //Your function should determine whether the password provided is valid or not.
 //The function returns true/false (7pts)
-fun pass(password:String){
+fun pass(password:String):Boolean{
     if (password.length==8 && password.length<=16 && password !="password"){
-        println(true)
+        return true
     }
     else{
-        println(false)
+        return false
     }
 }
 //Create a function that prints out multiples of 6 and 8 between 1 and 1000. For
@@ -52,7 +51,7 @@ fun pass(password:String){
 fun multiple(){
     for (i in 1..1000){
         if (i%6==0 && i%8==0){
-          println("Bingo")
+          println("Bingo!")
         }
     }
 }
